@@ -1,0 +1,86 @@
+T1537.8 should change to t1537.15#t0492c06-#t0493b27 I think.
+
+Maybe T1537.9 should change to t1537.15#t0493c07. I don’t know where it ends though.
+T1537.9 has some info currently:
+"uid": "t1537.9"
+"volpage": "T xxvi 493c02-498b07",
+
+The volpage is currently the entire 9th fascicle. Fascicle nine is t1537.15-16 in the new structure, and I think all of t1537.16 is about non-returning like Iti 1-6 and has nothing about jhanas like the t1537.9 parallels listed. So that’s why I think T1537.9 could change to t1537.15#t0493c07 since that is the beginning of fascicle 9 and where it starts talking about the first jhana like its Pali parallels.
+
+T1537.10 could probably change to t1537.20.
+
+
+
+        {
+        "parallels": [
+            "an5.174",
+            "t1537.1"
+        ]
+    },
+
+
+
+
+
+
+
+Done!
+        {
+        "parallels": [
+            "an6.10",
+            "an6.25",
+            "sa-2.156",
+            "sa931",
+            "t1536.7#t0433a02-#t0433b08",
+            "t1537.15#t0492c06-#t0493b27"
+        ]
+    },
+
+     {
+        "parallels": [
+            "mn64#9.1-#15.1",
+            "mn52#4.1-#14.1",
+            "an9.36#2.1-#9.1",
+            "an11.16#4.1-#9.1",
+            "t1537.15#t0493c07"
+        ]
+    },
+
+    {
+        "parallels": [
+            "an1.268-277",
+            "~mn115",
+            "~d297",
+            "~ma181",
+            "~t1537.20",
+            "~t776",
+            "~up1.032"
+        ]
+    },
+        {
+        "parallels": [
+            "t1509.24a",
+            "~mn115",
+            "~d297",
+            "~ma181",
+            "~t1537.20",
+            "~t776",
+            "~up1.032"
+        ]
+    },
+        {
+        "parallels": [
+            "mn115",
+            "d297",
+            "ma181",
+            "t1537.20",
+            "t776",
+            "up1.032",
+            "~an1.268-277",
+            "~t1509.24a"
+        ]
+    },
+    
+Add:
+
+t1537.15#t0493b27
