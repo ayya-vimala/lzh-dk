@@ -1,4 +1,5 @@
 import json
+import re
 from typing import Tuple
 
 INPUT_FILE = 'parallels.json'
@@ -6,6 +7,12 @@ OUTPUT_FILE = 'new_parallels.json'
 
 EMPTY_ENTRY = lambda: {"full": [], "resembling": [], "retells": [], "mentions": [], "sections": {}}
 EMPTY_SECTION = lambda: {"full": [], "resembling": [], "retells": [], "mentions": []}
+
+
+def natural_sort_key(s):
+    if not isinstance(s, str):
+        print(f"Not a string: {type(s)} = {s}")
+    return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', s)]
 
 
 def add_unique(existing: list, new_items: list) -> list:
@@ -73,11 +80,10 @@ def main():
             print(f"Warning: unrecognised item structure: {item}")
 
     for entry in newpardict.values():
-        entry["sections"] = dict(sorted(entry["sections"].items()))
+        entry["sections"] = dict(sorted(entry["sections"].items(), key=lambda x: natural_sort_key(x[0])))
 
     with open(OUTPUT_FILE, 'w', encoding='utf8') as f:
-        json.dump(dict(sorted(newpardict.items())), f, ensure_ascii=False, indent=8)
-
+        json.dump(dict(sorted(newpardict.items(), key=lambda x: natural_sort_key(x[0]))), f, ensure_ascii=False, indent=8)
 
 if __name__ == "__main__":
     main()
